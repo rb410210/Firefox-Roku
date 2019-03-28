@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Push to Roku",
+  "version": "1.0",
+  "description": "Pushes Content to Roku",
+  "icons": {
+    "48": "icons/roku.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "firefox_roku@rb410210",
+      "strict_min_version": "50.0"
+    }
+  },
+  "permissions": ["contextMenus", "nativeMessaging", "activeTab"],
+  "background": {
+    "scripts": ["roku.js"]
+  }
+}
